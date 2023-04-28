@@ -2,7 +2,7 @@ window.addEventListener("load", async () => {
   const feedback = document.getElementById("feedback");
   const formulario = document.getElementById("formulario");
   const deleteUser = async (id) => {
-    return fetch(`${window.location.hostname}/api/usuarios/${id}`, {
+    return fetch(`/api/usuarios/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

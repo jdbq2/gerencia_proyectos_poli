@@ -2,7 +2,7 @@ window.addEventListener("load", async () => {
   const feedback = document.getElementById("feedback");
   const formulario = document.getElementById("formulario");
   const updateUser = async (data, id) => {
-    return fetch(`${window.location.hostname}/api/usuarios/${id}`, {
+    return fetch(`/api/usuarios/${id}`, {
       method: "PUT",
       body: JSON.stringify(data),
       headers: {

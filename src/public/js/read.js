@@ -1,7 +1,7 @@
 window.addEventListener("load", async () => {
   const totalUsuarios = document.getElementById("total_usuarios");
   const listadoUsuarios = document.getElementById("listado_usuarios");
-  let data = await fetch(`${window.location.hostname}/api/usuarios`);
+  let data = await fetch(`/api/usuarios`);
   let users = await data.json();
 
   const { usuarios, total_usuarios_activos } = users;
